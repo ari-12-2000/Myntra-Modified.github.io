@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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"
+        sizes="64x64" />
+</head>
+
+<body>
+    <header class="fixed">
+        <nav class="flex space-evenly" id="nav">
+
+            <a href="#" class="mx-left align-self-center"><img src="images/download.png" /></a>
+            <div class="left flex">
+                <ul class="flex">
+                    <li class="flex align-center" id="mendiv" onmouseover="toggleNotifi(this)"
+                        onmouseout="removeNotifi(this)">
+                        <a href="#">MEN</a>
+                    </li>
+                    <li class="flex align-center" id="womendiv" onmouseover="toggleNotifi(this)"
+                        onmouseout="removeNotifi(this)">
+                        <a href="#">WOMEN</a>
+                    </li>
+                    <li class="flex align-center" id="kidsdiv" onmouseover="toggleNotifi(this)"
+                        onmouseout="removeNotifi(this)">
+                        <a href="#">KIDS</a>
+                    </li>
+                    <li class="flex align-center" id="homediv" onmouseover="toggleNotifi(this)"
+                        onmouseout="removeNotifi(this)">
+                        <a href="#">HOME & LIVING</a>
+                    </li>
+                    <li class="flex align-center" id="beautydiv" onmouseover="toggleNotifi(this)"
+                        onmouseout="removeNotifi(this)">
+                        <a href="#">BEAUTY</a>
+                    </li>
+                    <li class="flex studio-new align-center" id="studiodiv" onmouseover="toggleNotifi(this)"
+                        onmouseout="removeNotifi(this)">
+                        <a href="#" class="studio relative">
+                            STUDIO
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right flex ">
+                <div class="search-box flex align-self-center align-center ">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search for products, brands and more" />
+                </div>
+    
+                <div class="flex col align-center justify-center" id="profilediv" onmouseover="toggleNotifi(this)"
+                    onmouseout="removeNotifi(this)">
+                    <i class="icons fa fa-user"></i>
+                    <p>Profile</p>
+                </div>
+    
+                <div class="flex col align-center justify-center">
+                    <i class="icons fa fa-heart"></i>
+                    <p>Wishlist</p>
+    
+                </div>
+    
+    
+                <div class="flex col align-center justify-center">
+                    <i class="icons fa fa-bag-shopping"></i>
+                    <p>Bag</p>
+                </div>
+    
+                <div class="flex col align-center justify-center" current_count="3" id="belldiv"
+                    onmouseover="toggleNotifi(this)" onmouseout="removeNotifi(this)">
+                    <i class="icons fa fa-bell"></i>
+                    <p>Price Drop</p>
+                </div>
+            </div>
+    
+        </nav>
+        <div class="absolute" id="cover">
+        </div>
+        <div class="flex col align-center justify-center relative" id="bell" onmouseover="toggleNotifi(this)"
+            onmouseout="removeNotifi(this)">
+            <div class="flex notify-item">
+                <img src="images/dress1.webp" />
+                <a class="flex col align-center" href="#">
+                    <h6>Roadster</h6>
+                    <p class="text2">
+                        Men Green Black Colourblocked Polo Collar Pure Cotton T-shirt
+                    </p>
+                    <p class="drop flex align-center justify-center">
+                        <img src="images/arrow_go_down.png" />16%
+                    </p>
+                </a>
+            </div>
+            <div class="flex notify-item">
+                <img src="images/dress2.webp" />
+                <a class="flex col align-center" href="#">
+                    <h6>HRX by Hrithik Roshan</h6>
+                    <p class="text2">Men Yellow Printed Cotton Pure Cotton T-shirt</p>
+                    <p class="drop flex align-center justify-center">
+                        <img src="images/arrow_go_down.png" />17%
+                    </p>
+                </a>
+            </div>
+            <div class="flex notify-item">
+                <img src="images/dress3.webp" />
+                <a class="flex col align-center" href="#">
+                    <h6>Roadster</h6>
+                    <p class="text2">Men Black Printed Cotton Pure Cotton T-shirt</p>
+                    <p class="drop flex align-center justify-center">
+                        <img src="images/arrow_go_down.png" />20%
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="flex col relative" id="profile" onmouseover="toggleNotifi(this)" onmouseout="removeNotifi(this)">
+            <div class="content flex col">
+                <h4>Welcome</h4>
+                <p>To access account and manage orders</p>
+                <button class="btn flex justify-center align-center login">
+                    LOGIN / SIGNUP
+                </button>
+                <hr />
+                <a href="#">Orders</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Myntra Insider <span class="new-2">NEW</span></a>
+                <hr style="margin-top: 3%" />
+                <a href="#">Myntra Credit</a><a href="#">Coupons</a><a href="#">Saved Cards</a><a href="#">Saved
+                    VPA</a><a href="#">Saved Addresses</a>
+            </div>
+        </div>
+
+        <div class="notify-box flex col align-center relative" id="studio" onmouseover="toggleNotifi(this)"
+            onmouseout="removeNotifi(this)">
+            <div class="content align-center flex col">
+                <img src="images/studio-logo-new.svg" alt="image" />
+                <p style="line-height: 3; font-size: 100%; font-weight: lighter">
+                    Your daily inspiration for everything fashion
+                </p>
+                <img src="images/sudio-nav-banner.png" alt="" style="width: 100%;" />
+                <button style=" width: 35%; color: black; " onclick="window.location.href ='#';"
+                    class="flex btn justify-center align-center">
+                    EXPLORE STUDIO >
+                </button>
+            </div>
+        </div>
+        <div class="flex space-evenly large-box relative" id="men" onmouseover="toggleNotifi(this)"
+            onmouseout="removeNotifi(this)">
+            <div class="content">
+                <a href="">Topwear</a><a href="">T-Shirts</a><a href="">Casual Shirts</a><a href="">Formal Shirts</a><a
+                    href="">Sweatshirts</a><a href="">Sweaters</a><a href="">Jackets</a><a href="">Blazers & Coats</a><a
+                    href="">Suits</a><a href="">Rain Jackets</a>
+                <hr />
+                <a href="">Indian & Festive Wear</a><a href="">Kurtas & Kurta Sets</a><a href="">Sherwanis</a><a
+                    href="">Nehru Jackets</a><a href="">Dhotis</a>
+            </div>
+            <div class="content">
+                <a href="">Bottomwear</a><a href="">Jeans</a><a href="">Casual Trousers</a><a href="">Formal
+                    Trousers</a><a href="">Shorts</a><a href="">Track Pants & Joggers</a>
+                <hr />
+                <a href="">Innerwear & Sleepwear</a><a href="">Briefs & Trunks</a><a href="">Boxers</a><a
+                    href="">Vests</a><a href="">Sleepwear & Loungewear</a><a href="">Thermals</a>
+                <hr />
+                <a href="">Plus Size</a>
+            </div>
+            <div class="content">
+                <a href="">Footwear</a><a href="">Casual Shoes</a><a href="">Sports Shoes</a><a href="">Formal
+                    Shoes</a><a href="">Sneakers</a><a href="">Sandals & Floaters</a><a href="">Flip Flops</a><a
+                    href="">Socks</a>
+                <hr />
+                <a href="">Personal Care & Grooming</a>
+                <div><a href="">Sunglasses & Frames</a></div>
+                <div><a href="">Watches</a></div>
+            </div>
+            <div class="content">
+                <a href="">Sports & Active Wear</a><a href="">Sports Shoes</a><a href="">Sports Sandals</a><a
+                    href="">Active T-Shirts</a><a href="">Track Pants & Shorts</a><a href="">Tracksuits</a><a
+                    href="">Jackets & Sweatshirts</a><a href="">Sports Accessories</a><a href="">Swimwear</a>
+                <hr />
+                <a href="">Gadgets</a><a href="">Smart Wearables</a><a href="">Fitness Gadgets</a><a
+                    href="">Headphones</a><a href="">Speakers</a>
+            </div>
+            <div class="content">
+                <a href="">Fashion Accessories</a><a href="">Wallets</a><a href="">Belts</a><a href="">Perfumes & Body
+                    Mists</a><a href="">Trimmers</a><a href="">Deodorants</a><a href="">Ties, Cufflinks & Pocket
+                    Squares</a><a href="">Accessory Gift Sets</a><a href="">Caps & Hats</a><a href="">Mufflers, Scarves
+                    & Gloves</a><a href="">Phone Cases</a><a href="">Rings & Wristwear</a><a href="">Helmets</a>
+                <hr />
+                <a href="">Bags & Backpacks</a>
+                <div><a href="">Luggages & Trolleys</a></div>
+            </div>
+        </div>
+        <div class="flex space-evenly large-box relative" id="women" onmouseover="toggleNotifi(this)"
+            onmouseout="removeNotifi(this)">
+            <div class="content">
+                <a href="">Indian & Fusion Wear</a><a href="">Kurtas & Suits</a><a href="">Kurtis, Tunics & Tops</a><a
+                    href="">Sarees</a><a href="">Ethnic Wear</a><a href="">Leggings, Salwars & Churidars</a><a
+                    href="">Skirts & Palazzos</a><a href="">Dress Materials</a><a href="">Lehenga Cholis</a><a
+                    href="">Dupattas & Shawls</a><a href="">Jackets</a>
+                <hr />
+                <a href="">Belts, Scarves & More</a>
+                <div><a href=""> Watches & Wearables</a></div>
+            </div>
+            <div class="content">
+                <a href="">Western Wear</a><a href="">Dresses</a><a href="">Tops</a><a href="">Tshirts</a><a
+                    href="">Jeans</a><a href="">Trousers & Capris</a><a href="">Shorts & Skirts</a><a
+                    href="">Co-ords</a><a href="">Playsuits</a><a href="">Jumpsuits</a><a href="">Shrugs</a><a
+                    href="">Sweaters & Sweatshirts</a><a href="">Jackets & Coats</a><a href="">Blazers & Waistcoats</a>
+                <hr />
+                <a href="">Plus Size</a>
+            </div>
+            <div class="content">
+                <a href="">Maternity</a>
+                <div><a href="">Sunglasses & Frames</a></div>
+                <div>
+                    <a href="">Footwear</a><a href="">Flats</a><a href="">Casual Shoes</a><a href="">Heels</a><a
+                        href="">Boots</a><a href="">Sports Shoes & Floaters</a>
+                    <hr />
+                    <a href=""> Sports & Active Wear </a><a href="">Clothing</a><a href="">Footwear</a><a href="">Sports
+                        Accessories</a><a href="">Sports Equipment</a>
+                </div>
+            </div>
+            <div class="content">
+                <a href="">Lingerie & Sleepwear</a><a href="">Bra</a><a href="">Briefs</a><a href="">Shapewear</a><a
+                    href="">Sleepwear & Loungewear</a><a href="">Swimwear</a><a href="">Camisoles & Thermals</a>
+                <hr />
+                <a href="">Beauty & Personal Care</a><a href="">Makeup</a><a href="">Skincare</a><a href="">Premium
+                    Beauty</a><a href="">Lipsticks</a><a href="">Fragrances</a>
+            </div>
+            <div class="content">
+                <a href="">Gadgets</a><a href="">Smart Wearables</a><a href="">Fitness Gadgets</a><a
+                    href="">Headphones</a><a href="">Speakers</a>
+                <hr />
+                <a href="">Jewellery</a><a href="">Fashion Jewellery</a><a href="">Fine Jewellery</a><a
+                    href="">Earrings</a>
+                <hr />
+                <a href="">Backpacks</a>
+                <div><a href="">Handbags, Bags & Wallets</a></div>
+                <div><a href="">Luggages & Trolleys</a></div>
+            </div>
+        </div>
+        <div class="flex space-evenly large-box relative" id="kids" onmouseover="toggleNotifi(this)"
+            onmouseout="removeNotifi(this)">
+            <div class="content">
+                <a href="">Boys Clothing</a><a href="">T-Shirts</a><a href="">Shirts</a><a href="">Shorts</a><a
+                    href="">Jeans</a><a href="">Trousers</a><a href="">Clothing Sets</a><a href="">Ethnic Wear</a><a
+                    href="">Track Pants & Pyjamas</a><a href="">Jacket, Sweater & Sweatshirts</a><a href="">Party
+                    Wear</a><a href="">Innerwear & Thermals</a><a href="">Nightwear & Loungewear</a><a href="">Value
+                    Packs</a>
+            </div>
+            <div class="content">
+                <a href="">Girls Clothing</a><a href="">Dresses</a><a href="">Tops</a><a href="">Tshirts</a><a
+                    href="">Clothing Sets</a><a href="">Lehenga choli</a><a href="">Kurta Sets</a><a href="">Party
+                    wear</a><a href="">Dungarees & Jumpsuits</a><a href="">Skirts & shorts</a><a href="">Tights &
+                    Leggings</a><a href="">Jeans, Trousers & Capris</a><a href="">Jacket, Sweater & Sweatshirts</a><a
+                    href="">Innerwear & Thermals</a><a href="">Nightwear & Loungewear</a><a href="">Value Packs</a>
+            </div>
+            <div class="content">
+                <a href="">Footwear</a><a href="">Casual Shoes</a><a href="">Flipflops</a><a href="">Sports Shoes</a><a
+                    href="">Flats</a><a href="">Sandals</a><a href="">Heels</a><a href="">School Shoes</a><a
+                    href="">Socks</a>
+                <hr>
+                <a href="">Toys</a><a href="">Learning & Development</a><a href="">Activity Toys</a><a href="">Soft
+                    Toys</a><a href="">Action Figure / Play set</a>
+            </div>
+            <div class="content">
+                <a href="">Infants</a><a href="">Bodysuits</a><a href="">Rompers & Sleepsuits</a><a href="">Clothing
+                    Sets</a><a href="">Tshirts & Tops</a><a href="">Dresses</a><a href="">Bottom wear</a><a
+                    href="">Winter Wear</a><a href="">Innerwear & Sleepwear</a><a href="">Infant Care</a>
+                <hr>
+                <a href="">Home & Bath</a>
+                <div>
+                    <a href="">Personal Care</a>
+                </div>
+            </div>
+            <div class="content">
+                <a href="">Kids Accessories</a><a href="">Bags & Backpacks</a><a href="">Watches</a><a href="">Jewellery
+                    & Hair accessory</a><a href="">Sunglasses</a><a href="">Masks & Protective Gears</a><a href="">Caps
+                    & Hats</a>
+                <hr>
+                <a href="">Brands</a><a href="">H&M</a><a href="">Max Kids</a><a href="">Pantaloons</a><a href="">United
+                    Colors Of Benetton Kids</a><a href="">YK</a><a href="">U.S. Polo Assn. Kids</a><a
+                    href="">Mothercare</a><a href="">HRX</a>
+            </div>
+        </div>
+        <div class="flex space-evenly large-box relative" id="home" onmouseover="toggleNotifi(this)"
+            onmouseout="removeNotifi(this)">
+            <div class="content">
+                <a href="">Bed Linen & Furnishing</a><a href="">Bed Runners</a><a href="">Mattress Protectors</a><a
+                    href="">Bedsheets</a><a href="">Bedding Sets</a><a href="">Blankets, Quilts & Dohars</a><a
+                    href="">Pillows & Pillow Covers</a><a href="">Bed Covers</a><a href="">Diwan Sets</a><a
+                    href="">Chair Pads & Covers</a><a href="">Sofa Covers</a>
+                <hr>
+                <a href="">Flooring</a><a href="">Floor Runners</a><a href="">Carpets</a><a href="">Floor Mats &
+                    Dhurries</a><a href="">Door Mats</a>
+            </div>
+            <div class="content">
+                <a href="">Bath</a><a href="">Bath Towels</a><a href="">Hand & Face Towels</a><a href="">Beach
+                    Towels</a><a href="">Towels Set</a><a href="">Bath Rugs</a><a href="">Bath Robes</a><a
+                    href="">Bathroom Accessories</a><a href="">Shower Curtains</a>
+                <hr>
+                <a href="">Lamps & Lighting</a><a href="">Floor Lamps</a><a href="">Ceiling Lamps
+                </a><a href="">Table Lamps
+                </a><a href="">Wall Lamps
+                </a><a href="">Outdoor Lamps
+                </a><a href="">String Lights
+                </a>
+            </div>
+            <div class="content">
+                <a href="">Home Décor
+                </a><a href="">Plants & Planters
+                </a><a href="">Aromas & Candles</a><a href="">Clocks</a><a href="">Mirrors
+                </a><a href="">Wall Décor
+                </a><a href="">Festive Decor
+                </a><a href="">Pooja Essentials
+                </a><a href="">Wall Shelves</a><a href="">Fountains</a><a href="">Showpieces & Vases</a><a
+                    href="">Ottoman
+                </a>
+                <hr>
+                <a href="">Cushions & Cushion Covers</a>
+                <div><a href="">Curtains</a>
+                </div>
+            </div>
+            <div class="content">
+                <div><a href="">Home Gift Sets</a></div>
+                <a href="">Kitchen & Table</a><a href="">Table Runners
+                </a><a href="">Dinnerware & Serveware
+                </a><a href="">Cups and Mugs
+                </a><a href="">Bakeware & Cookware
+                </a><a href="">Kitchen Storage & Tools
+                </a><a href="">Bar & Drinkware
+                </a><a href="">Table Covers & Furnishings
+                </a>
+                <hr>
+                <a href="">Storage</a><a href="">Bins</a><a href="">Hangers</a><a href="">Organisers</a><a href="">Hooks
+                    & Holders</a><a href="">Laundry Bags</a>
+            </div>
+            <div class="content">
+                <a href="">Brands
+                </a><a href="">H&M
+                </a><a href="">Marks & Spencer
+                </a><a href="">Home Centre</a><a href="">Spaces
+                </a><a href="">D'Decor
+                </a><a href="">Story@Home
+                </a><a href="">Pure Home & Living
+                </a><a href="">Swayam
+                </a><a href="">Raymond Home
+                </a><a href="">Maspar
+                </a><a href="">Trident</a><a href="">Cortina
+                </a><a href="">Random
+                </a><a href="">Ellementry</a><a href="">ROMEE
+                </a><a href="">SEJ by Nisha Gupta
+                </a>
+            </div>
+
+        </div>
+        <div class="flex space-evenly large-box relative" id="beauty" onmouseover="toggleNotifi(this)"
+            onmouseout="removeNotifi(this)">
+            <div class="content"> <a href="">Makeup</a><a href="">Lipstick</a><a href="">Lip Gloss</a><a href="">Lip
+                    Liner</a><a href="">Mascara</a><a href="">Eyeliner</a><a href="">Kajal</a><a href="">Eyeshadow</a><a
+                    href="">Foundation</a><a href="">Primer</a><a href="">Concealer</a><a href="">Compact</a><a
+                    href="">Nail Polish</a>
+            </div>
+            <div class="content"><a href="">Skincare, Bath & Body</a><a href="">Face Moisturiser</a><a
+                    href="">Cleanser</a><a href="">Masks & Peel</a><a href="">Sunscreen</a><a href="">Serum</a><a
+                    href="">Face Wash</a><a href="">Eye Cream</a><a href="">Lip Balm</a><a href="">Body Lotion</a><a
+                    href="">Body Wash</a><a href="">Body Scrub</a><a href="">Hand Cream</a>
+                <hr>
+                <a href="">Baby Care</a>
+                <div>Masks</div>
+            </div>
+            <div class="content">
+                <a href="">Haircare</a><a href="">Shampoo</a><a href="">Conditioner</a><a href="">Hair Cream</a><a
+                    href="">Hair Oil</a><a href="">Hair Gel</a><a href="">Hair Color</a><a href="">Hair Serum</a><a
+                    href="">Hair Accessory</a>
+                <hr>
+                <a href="">Fragrances</a><a href="">Perfume</a><a href="">Deodorant</a><a href="">Body Mist</a>
+            </div>
+            <div class="content">
+                <a href="">Appliances</a><a href="">Hair Straightener</a><a href="">Hair Dryer</a><a
+                    href="">Epilator</a>
+                <hr>
+                <a href="">Men's Grooming</a><a href="">Trimmers</a><a href="">Beard Oil</a><a href="">Hair Wax</a>
+                <hr>
+                <a href="">Beauty Gift & Makeup Set</a><a href="">Beauty Gift</a><a href="">Makeup Kit</a>
+                <hr>
+                <a href="">Premium Beauty</a>
+                <div><a href="">Wellness & Hygiene</a></div>
+            </div>
+            <div class="content">
+
+                <a href="">Lakme</a>
+                <a href="">Maybelline</a><a href="">LOreal</a><a href="">Philips</a><a href="">Bath & Body Works</a><a
+                    href="">THE BODY SHOP</a><a href="">Biotique</a><a href="">Mamaearth</a><a href="">MCaffeine</a><a
+                    href="">Nivea</a><a href="">Lotus Herbals</a><a href="">LOreal Professionnel</a><a href="">KAMA
+                    AYURVEDA</a><a href="">M.A.C</a><a href="">Forest Essentials</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="flex arrange justify-center" id="mid">
+        <div class="materials flex">
+            <div class="offer flex col">
+                <img src="images/1.webp" alt="" />
+                <img src="images/2.webp" alt="" />
+                <img src="images/3.webp" alt="" />
+            </div>
+            <div class="men-women flex">
+                <div class="human flex col">
+                    <img src="images/a.webp" />
+                    <img src="images/b.webp" />
+                    <img src="images/c.webp" />
+                </div>
+
+                <div class="human flex col">
+                    <img src="images/d.webp" />
+                    <img src="images/e.webp" />
+                    <img src="images/f.webp" />
+                </div>
+            </div>
+            <div class="offer flex col">
+                <img src="images/4.webp" alt="" />
+                <img src="images/5.webp" alt="" />
+                <img src="images/6.webp" alt="" />
+            </div>
+        </div>
+    </div>
+    <div id="image-dress">
+        <img class="order" src="images/7.webp" id="dress" style="margin-top:3%" />
+
+        <img class="images" src="images/img1.webp" id="dress" /><img class="images" src="images/img2.webp" id="dress" /><img
+            class="images" src="images/img3.webp" id="dress" /><img class="images" src="images/img4.webp" id="dress" /><img
+            class="images" src="images/img5.webp" id="dress" /><img class="images" src="images/img6.webp" id="dress" /><img
+            class="images" src="images/img7.webp" id="dress" /><img class="images" src="images/img8.webp" id="dress" /><img
+            class="images" src="images/img9.webp" id="dress" /><img class="images" src="images/img10.webp" id="dress" />
+        <img class="images" src="images/img11.webp" id="dress" /><img class="images" src="images/img12.webp" id="dress" /><img
+            class="images" src="images/img13.webp" id="dress" /><img class="images" src="images/img14.webp" id="dress" /><img
+            class="images" src="images/img15.webp" id="dress" /><img class="images" src="images/img16.webp" id="dress" /><img
+            class="images" src="images/img17.webp" id="dress" /><img class="images" src="images/img18.webp" id="dress" /><img
+            class="images" src="images/img19.webp" id="dress" /><img class="images" src="images/img20.webp" id="dress" />
+
+    </div>
+
+    <footer id="foo">
+        <div class="flex">
+            <div class="flex space-evenly large-box">
+                <div class="content">
+                    <div>
+                        <a href="">ONLINE SHOPPING</a>
+                        <br>
+                        <a href="#"> Men</a><a href="">Women</a><a href="">Kids</a><a href="">Home & living</a><a
+                            href="">Beauty</a><a href="">Gift Cards</a><a href="">Myntra Insider</a>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="">USEFUL LINKS</a>
+                        <br>
+                        <a href="">Blog</a><a href="">Careers</a><a href="">Site Map</a><a href="">Corporate
+                            Information</a><a href="">Whitehat</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <a href="">CUSTOMER POLICIES</a>
+                    <br>
+
+                    <a href="">Contact Us</a><a href="">FAQ</a><a href="">T&C</a><a href="">Terms Of Use</a><a
+                        href="">Track
+                        Orders</a><a href="">Shipping</a><a href="">Cancellation</a><a href="">Returns</a><a
+                        href="">Privacy
+                        policy</a><a href="">Grievance Officer</a>
+
+
+                </div>
+                <div class="content">
+
+                    <a href=""> EXPERIENCE MYNTRA APP ON MOBILE</a>
+                    <br>
+                    <div class="image1 flex space-between">
+                        <a href=""><img src="images/google.png"></a>
+                        <a href=""><img src="images/apple.png"></a>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="">KEEP IN TOUCH</a>
+                    </div>
+                    <br>
+                    <div class="image2 flex space-between"><a href=""><img src="images/fb.png" alt=""></a><a href=""><img
+                                src="images/twitter.png" alt=""></a><a href=""><img src="images/youtube.png" alt=""></a><a
+                            href=""><img src="images/insta.png"></a>
+                    </div>
+
+                </div>
+            </div>
+            <div style="margin-left:7%;">
+                <div class=" flex stamp ">
+                    <img src="images/original.png" alt="">
+                    <div><strong>100% ORIGINAL</strong> guarantee for all products at myntra.com</div>
+
+                </div>
+                <div class=" flex stamp ">
+                    <img src="images/return.png" alt="">
+                    <div><strong>Return within 30days</strong> of receiving your order</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex space-between align-center end">
+            <p style="font-weight: bold;font-size:92%">POPULAR SEARCHES</p>
+            <hr>
+        </div>
+        <div class="end">
+            <div><a href=""> Makeup</a> | <a href=""> Dresses For Girls</a> | <a href="">
+                    T-Shirts</a> | <a href="">
+                    Sandals</a> | <a href=""> Headphones</a> | <a href=""> Babydolls</a> | <a href=""> Blazers For
+                    Men</a> | <a href=""> Handbags</a> |
+                <a href=""> Ladies Watches</a> | <a href=""> Bags</a> | <a href=""> Sport Shoes</a> | <a href=""> Reebok
+                    Shoes</a> | <a href=""> Puma Shoes</a> |
+            </div>
+            <div><a href=""> Boxers</a> | <a href=""> Wallets</a> | <a href=""> Tops</a> | <a href="">
+                    Earrings</a> |
+                <a href=""> Fastrack Watches</a> | <a href=""> Kurtis</a> | <a href=""> Nike</a> | <a href=""> Smart
+                    Watches</a> | <a href=""> Titan Watches</a> |
+                <a href=""> Designer Blouse</a> | <a href=""> Gowns</a> | <a href=""> Rings</a> | <a href=""> Cricket
+                    Shoes</a> | <a href=""> Forever 21</a> | <a href=""> Eye</a>
+            </div>
+            <div><a href=""> Makeup</a> | <a href=""> Photo Frames</a> | <a href=""> Punjabi Suits</a> | <a href="">
+                    Bikini</a> | <a href=""> Myntra Fashion Show</a> | <a href=""> Lipstick</a> | <a href=""> Saree</a>
+                | <a href=""> Watches</a> |
+                <a href=""> Dresses</a>
+                | <a href=""> Lehenga</a> | <a href=""> Nike Shoes</a> | <a href=""> Goggles</a> | <a href=""> Bras</a>
+                | <a href=""> Suit</a> | <a href=""> Chinos</a> | <a href=""> Shoes</a> |
+            </div>
+            <div><a href=""> Adidas Shoes</a> | <a href=""> Woodland Shoes</a> | <a href=""> Jewellery</a> | <a href="">
+                    Designers Sarees</a></div>
+        </div>
+
+        <div class="flex space-between end">
+            <p>
+                In case of any concern, <strong style="color:rgb(51, 51, 218)">Contact Us</strong>
+            </p>
+            <p>
+                &copy;2023 www.myntra.com. All rights reserved.
+            </p>
+        </div>
+
+
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
