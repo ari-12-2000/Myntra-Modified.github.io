@@ -386,7 +386,7 @@ hr{
   font-weight: bold;
 }
 .btn{
- height:10%;
+ height:3vw;
   width:48%;
   border-radius:4%;
   border:1px solid rgb(223, 220, 220);
@@ -417,7 +417,7 @@ hr{
 }
 #studio{
   display:none;
-  height: 74vh;
+  height: auto;
   width:42vw;
   background-color: white;
   margin-top: 0%;
@@ -433,7 +433,7 @@ header{
 .large-box{
   
   width:85%;
-  height:73vh;
+  height:auto;
   margin-left:8%;
   background-color: white;
   
