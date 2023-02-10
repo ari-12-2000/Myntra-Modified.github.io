@@ -18,10 +18,9 @@
 
 <body>
     <header class="fixed">
-        <nav class="flex space-evenly" id="nav">
-
-            <a href="#" class="mx-left align-self-center"><img src="images/download.png" /></a>
-            <div class="left flex">
+        <nav class="flex  space-between" id="nav">
+            <div class="mx-left left flex space-between">
+                <a href="#" class="mx-left align-self-center"><img src="images/download.png" /></a>
                 <ul class="flex">
                     <li class="flex align-center" id="mendiv" onmouseover="toggleNotifi(this)"
                         onmouseout="removeNotifi(this)">
@@ -56,104 +55,111 @@
                     <i class="fa fa-search"></i>
                     <input type="text" placeholder="Search for products, brands and more" />
                 </div>
-    
+
                 <div class="flex col align-center justify-center" id="profilediv" onmouseover="toggleNotifi(this)"
                     onmouseout="removeNotifi(this)">
                     <i class="icons fa fa-user"></i>
                     <p>Profile</p>
+                    <div class="flex col absolute" id="profile" onmouseover="toggleNotifi(this)" onmouseout="removeNotifi(this)">
+                        <div class="content flex col">
+                            <h4>Welcome</h4>
+                            <p>To access account and manage orders</p>
+                            <button class="btn flex justify-center align-center login">
+                                LOGIN / SIGNUP
+                            </button>
+                            <hr />
+                            <a href="#">Orders</a>
+                            <a href="#">Wishlist</a>
+                            <a href="#">Gift Cards</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Myntra Insider <span class="new-2">NEW</span></a>
+                            <hr style="margin-top: 3%" />
+                            <a href="#">Myntra Credit</a><a href="#">Coupons</a><a href="#">Saved Cards</a><a href="#">Saved
+                                VPA</a><a href="#">Saved Addresses</a>
+                        </div>
+                    </div>
                 </div>
-    
+
                 <div class="flex col align-center justify-center">
                     <i class="icons fa fa-heart"></i>
                     <p>Wishlist</p>
-    
+
                 </div>
-    
-    
+
+
                 <div class="flex col align-center justify-center">
                     <i class="icons fa fa-bag-shopping"></i>
                     <p>Bag</p>
                 </div>
-    
-                <div class="flex col align-center justify-center" current_count="3" id="belldiv"
+
+                <div class="flex col align-center justify-center relative " current_count="3" id="belldiv"
                     onmouseover="toggleNotifi(this)" onmouseout="removeNotifi(this)">
-                    <i class="icons fa fa-bell"></i>
+                    <i class="icons fa fa-bell" id="bell-icon"></i>
                     <p>Price Drop</p>
+                    <div class="flex col align-center justify-center absolute" id="bell" onmouseover="toggleNotifi(this)"
+                    onmouseout="removeNotifi(this)">
+                    <div class="flex notify-item">
+                        <img src="images/dress1.webp" />
+                        <a class="flex col align-center" href="#">
+                            <h6>Roadster</h6>
+                            <p class="text2">
+                                Men Green Black Colourblocked Polo Collar Pure Cotton T-shirt
+                            </p>
+                            <p class="drop flex align-center justify-center">
+                                <img src="images/arrow_go_down.png" />16%
+                            </p>
+                        </a>
+                    </div>
+                    <div class="flex notify-item">
+                        <img src="images/dress2.webp" />
+                        <a class="flex col align-center" href="#">
+                            <h6>HRX by Hrithik Roshan</h6>
+                            <p class="text2">Men Yellow Printed Cotton Pure Cotton T-shirt</p>
+                            <p class="drop flex align-center justify-center">
+                                <img src="images/arrow_go_down.png" />17%
+                            </p>
+                        </a>
+                    </div>
+                    <div class="flex notify-item">
+                        <img src="images/dress3.webp" />
+                        <a class="flex col align-center" href="#">
+                            <h6>Roadster</h6>
+                            <p class="text2">Men Black Printed Cotton Pure Cotton T-shirt</p>
+                            <p class="drop flex align-center justify-center">
+                                <img src="images/arrow_go_down.png" />20%
+                            </p>
+                        </a>
+                    </div>
                 </div>
+                </div>
+                
             </div>
-    
+
         </nav>
         <div class="absolute" id="cover">
         </div>
-        <div class="flex col align-center justify-center relative" id="bell" onmouseover="toggleNotifi(this)"
-            onmouseout="removeNotifi(this)">
-            <div class="flex notify-item">
-                <img src="images/dress1.webp" />
-                <a class="flex col align-center" href="#">
-                    <h6>Roadster</h6>
-                    <p class="text2">
-                        Men Green Black Colourblocked Polo Collar Pure Cotton T-shirt
-                    </p>
-                    <p class="drop flex align-center justify-center">
-                        <img src="images/arrow_go_down.png" />16%
-                    </p>
-                </a>
-            </div>
-            <div class="flex notify-item">
-                <img src="images/dress2.webp" />
-                <a class="flex col align-center" href="#">
-                    <h6>HRX by Hrithik Roshan</h6>
-                    <p class="text2">Men Yellow Printed Cotton Pure Cotton T-shirt</p>
-                    <p class="drop flex align-center justify-center">
-                        <img src="images/arrow_go_down.png" />17%
-                    </p>
-                </a>
-            </div>
-            <div class="flex notify-item">
-                <img src="images/dress3.webp" />
-                <a class="flex col align-center" href="#">
-                    <h6>Roadster</h6>
-                    <p class="text2">Men Black Printed Cotton Pure Cotton T-shirt</p>
-                    <p class="drop flex align-center justify-center">
-                        <img src="images/arrow_go_down.png" />20%
-                    </p>
-                </a>
-            </div>
-        </div>
-        <div class="flex col relative" id="profile" onmouseover="toggleNotifi(this)" onmouseout="removeNotifi(this)">
-            <div class="content flex col">
-                <h4>Welcome</h4>
-                <p>To access account and manage orders</p>
-                <button class="btn flex justify-center align-center login">
-                    LOGIN / SIGNUP
-                </button>
-                <hr />
-                <a href="#">Orders</a>
-                <a href="#">Wishlist</a>
-                <a href="#">Gift Cards</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Myntra Insider <span class="new-2">NEW</span></a>
-                <hr style="margin-top: 3%" />
-                <a href="#">Myntra Credit</a><a href="#">Coupons</a><a href="#">Saved Cards</a><a href="#">Saved
-                    VPA</a><a href="#">Saved Addresses</a>
-            </div>
-        </div>
 
-        <div class="notify-box flex col align-center relative" id="studio" onmouseover="toggleNotifi(this)"
+           
+
+ 
+
+
+
+        <div class=" flex col align-center relative" id="studio" onmouseover="toggleNotifi(this)"
             onmouseout="removeNotifi(this)">
             <div class="content align-center flex col">
                 <img src="images/studio-logo-new.svg" alt="image" />
                 <p style="line-height: 3; font-size: 100%; font-weight: lighter">
                     Your daily inspiration for everything fashion
                 </p>
-                <img src="images/sudio-nav-banner.png" alt="" style="width: 100%;" />
-                <button style=" width: 35%; color: black; font-size: 1em;" onclick="window.location.href ='#';"
-                    class="flex btn justify-center align-center">
+                <img src="images/sudio-nav-banner.png" alt="" style="width: 100%; height:260.992px;" />
+                <button style=" height:45px; width: 268.8px; color: black; font-size: 1em;"
+                    onclick="window.location.href ='#';" class="flex btn justify-center align-center">
                     EXPLORE STUDIO >
                 </button>
             </div>
         </div>
-        <div class="flex space-evenly large-box relative" id="men" onmouseover="toggleNotifi(this)"
+        <div class="flex space-evenly large-box " id="men" onmouseover="toggleNotifi(this)"
             onmouseout="removeNotifi(this)">
             <div class="content">
                 <a href="">Topwear</a><a href="">T-Shirts</a><a href="">Casual Shirts</a><a href="">Formal Shirts</a><a
@@ -199,7 +205,7 @@
                 <div><a href="">Luggages & Trolleys</a></div>
             </div>
         </div>
-        <div class="flex space-evenly large-box relative" id="women" onmouseover="toggleNotifi(this)"
+        <div class="flex space-evenly large-box " id="women" onmouseover="toggleNotifi(this)"
             onmouseout="removeNotifi(this)">
             <div class="content">
                 <a href="">Indian & Fusion Wear</a><a href="">Kurtas & Suits</a><a href="">Kurtis, Tunics & Tops</a><a
@@ -248,7 +254,7 @@
                 <div><a href="">Luggages & Trolleys</a></div>
             </div>
         </div>
-        <div class="flex space-evenly large-box relative" id="kids" onmouseover="toggleNotifi(this)"
+        <div class="flex space-evenly large-box " id="kids" onmouseover="toggleNotifi(this)"
             onmouseout="removeNotifi(this)">
             <div class="content">
                 <a href="">Boys Clothing</a><a href="">T-Shirts</a><a href="">Shirts</a><a href="">Shorts</a><a
@@ -292,7 +298,7 @@
                     href="">Mothercare</a><a href="">HRX</a>
             </div>
         </div>
-        <div class="flex space-evenly large-box relative" id="home" onmouseover="toggleNotifi(this)"
+        <div class="flex space-evenly large-box " id="home" onmouseover="toggleNotifi(this)"
             onmouseout="removeNotifi(this)">
             <div class="content">
                 <a href="">Bed Linen & Furnishing</a><a href="">Bed Runners</a><a href="">Mattress Protectors</a><a
@@ -363,7 +369,7 @@
             </div>
 
         </div>
-        <div class="flex space-evenly large-box relative" id="beauty" onmouseover="toggleNotifi(this)"
+        <div class="flex space-evenly large-box " id="beauty" onmouseover="toggleNotifi(this)"
             onmouseout="removeNotifi(this)">
             <div class="content"> <a href="">Makeup</a><a href="">Lipstick</a><a href="">Lip Gloss</a><a href="">Lip
                     Liner</a><a href="">Mascara</a><a href="">Eyeliner</a><a href="">Kajal</a><a href="">Eyeshadow</a><a
@@ -438,84 +444,79 @@
     <div id="image-dress">
         <img class="order" src="images/7.webp" id="dress" style="margin-top:3%" />
 
-        <img class="images" src="images/img1.webp" id="dress" /><img class="images" src="images/img2.webp" id="dress" /><img
-            class="images" src="images/img3.webp" id="dress" /><img class="images" src="images/img4.webp" id="dress" /><img
-            class="images" src="images/img5.webp" id="dress" /><img class="images" src="images/img6.webp" id="dress" /><img
-            class="images" src="images/img7.webp" id="dress" /><img class="images" src="images/img8.webp" id="dress" /><img
-            class="images" src="images/img9.webp" id="dress" /><img class="images" src="images/img10.webp" id="dress" />
-        <img class="images" src="images/img11.webp" id="dress" /><img class="images" src="images/img12.webp" id="dress" /><img
-            class="images" src="images/img13.webp" id="dress" /><img class="images" src="images/img14.webp" id="dress" /><img
-            class="images" src="images/img15.webp" id="dress" /><img class="images" src="images/img16.webp" id="dress" /><img
-            class="images" src="images/img17.webp" id="dress" /><img class="images" src="images/img18.webp" id="dress" /><img
-            class="images" src="images/img19.webp" id="dress" /><img class="images" src="images/img20.webp" id="dress" />
+        <img class="images" src="images/img1.webp" id="dress" /><img class="images" src="images/img2.webp"
+            id="dress" /><img class="images" src="images/img3.webp" id="dress" /><img class="images"
+            src="images/img4.webp" id="dress" /><img class="images" src="images/img5.webp" id="dress" /><img
+            class="images" src="images/img6.webp" id="dress" /><img class="images" src="images/img7.webp"
+            id="dress" /><img class="images" src="images/img8.webp" id="dress" /><img class="images"
+            src="images/img9.webp" id="dress" /><img class="images" src="images/img10.webp" id="dress" />
+        <img class="images" src="images/img11.webp" id="dress" /><img class="images" src="images/img12.webp"
+            id="dress" /><img class="images" src="images/img13.webp" id="dress" /><img class="images"
+            src="images/img14.webp" id="dress" /><img class="images" src="images/img15.webp" id="dress" /><img
+            class="images" src="images/img16.webp" id="dress" /><img class="images" src="images/img17.webp"
+            id="dress" /><img class="images" src="images/img18.webp" id="dress" /><img class="images"
+            src="images/img19.webp" id="dress" /><img class="images" src="images/img20.webp" id="dress" />
 
     </div>
 
-    <footer id="foo">
-        <div class="flex">
-            <div class="flex space-evenly large-box">
-                <div class="content">
-                    <div>
-                        <a href="">ONLINE SHOPPING</a>
-                        <br>
-                        <a href="#"> Men</a><a href="">Women</a><a href="">Kids</a><a href="">Home & living</a><a
-                            href="">Beauty</a><a href="">Gift Cards</a><a href="">Myntra Insider</a>
-                    </div>
-                    <br>
-                    <div>
-                        <a href="">USEFUL LINKS</a>
-                        <br>
-                        <a href="">Blog</a><a href="">Careers</a><a href="">Site Map</a><a href="">Corporate
-                            Information</a><a href="">Whitehat</a>
-                    </div>
-                </div>
-                <div class="content">
-                    <a href="">CUSTOMER POLICIES</a>
-                    <br>
+    <footer class="foo">
+        <div class="container">
+            <div class="item1">
+                <a href="">ONLINE SHOPPING</a>
+                <br>
+                <a href="#"> Men</a><a href="">Women</a><a href="">Kids</a><a href="">Home & living</a><a
+                    href="">Beauty</a><a href="">Gift Cards</a><a href="">Myntra Insider</a>
+            </div>
+            <div class="item2">
+                <a href="" style="margin-top: 8px;">USEFUL LINKS</a>
+                <br>
+                <a href="">Blog</a><a href="">Careers</a><a href="">Site Map</a><a href="">Corporate
+                    Information</a><a href="">Whitehat</a>
+            </div>
+            <div class="item3">
+                <p>CUSTOMER POLICIES</p>
+                <br>
 
-                    <a href="">Contact Us</a><a href="">FAQ</a><a href="">T&C</a><a href="">Terms Of Use</a><a
-                        href="">Track
-                        Orders</a><a href="">Shipping</a><a href="">Cancellation</a><a href="">Returns</a><a
-                        href="">Privacy
-                        policy</a><a href="">Grievance Officer</a>
-
-
-                </div>
-                <div class="content">
-
-                    <a href=""> EXPERIENCE MYNTRA APP ON MOBILE</a>
-                    <br>
-                    <div class="image1 flex space-between">
-                        <a href=""><img src="images/google.png"></a>
-                        <a href=""><img src="images/apple.png"></a>
-                    </div>
-                    <br>
-                    <div>
-                        <a href="">KEEP IN TOUCH</a>
-                    </div>
-                    <br>
-                    <div class="image2 flex space-between"><a href=""><img src="images/fb.png" alt=""></a><a href=""><img
-                                src="images/twitter.png" alt=""></a><a href=""><img src="images/youtube.png" alt=""></a><a
-                            href=""><img src="images/insta.png"></a>
-                    </div>
-
+                <a href="">Contact Us</a><a href="">FAQ</a><a href="">T&C</a><a href="">Terms Of Use</a><a href="">Track
+                    Orders</a><a href="">Shipping</a><a href="">Cancellation</a><a href="">Returns</a><a href="">Privacy
+                    policy</a><a href="">Grievance Officer</a>
+            </div>
+            <div class="item4">
+                <a href=""> EXPERIENCE MYNTRA APP ON MOBILE</a>
+                <br>
+                <div class="image1 flex">
+                    <a href="" style="margin-top: 0px;"><img src="images/google.png"></a>
+                    <a href="" style="margin-left: 6px;"><img src="images/apple.png"></a>
                 </div>
             </div>
-            <div style="margin-left:7%;">
-                <div class=" flex stamp ">
-                    <img src="images/original.png" alt="">
-                    <div><strong>100% ORIGINAL</strong> guarantee for all products at myntra.com</div>
 
-                </div>
-                <div class=" flex stamp ">
-                    <img src="images/return.png" alt="">
-                    <div><strong>Return within 30days</strong> of receiving your order</div>
+            <div class="item5">
+                <a href="">KEEP IN TOUCH</a>
+                <br>
+                <div class="image2 flex"><a href="" style="margin-top: 0px;"><img src="images/fb.png" alt=""></a><a
+                        href="" style="margin-left: 8px;"><img src="images/twitter.png" alt=""></a><a href=""
+                        style="margin-left: 8px;"><img src="images/youtube.png" alt=""></a><a href=""
+                        style="margin-left: 8px;"><img src="images/insta.png"></a>
                 </div>
             </div>
+            <div class=" flex stamp item6">
+                <img src="images/original.png" alt="">
+                <div style="margin-left: 8px;"> <strong>100% ORIGINAL</strong> guarantee for<p>all products at
+                        myntra.com</p>
+                </div>
+
+            </div>
+            <div class=" flex stamp item7">
+                <img src="images/return.png" alt="">
+                <div style="margin-left: 8px;"><strong>Return within 30days</strong> of <p>receiving your order</p>
+                </div>
+            </div>
+
+
         </div>
-        <div class="flex space-between align-center end">
-            <p style="font-weight: bold;font-size:92%">POPULAR SEARCHES</p>
-            <hr>
+        <div class="flex align-center end">
+            <p style="font-weight: bold;">POPULAR SEARCHES</p>
+            <hr style="width:8000px;">
         </div>
         <div class="end">
             <div><a href=""> Makeup</a> | <a href=""> Dresses For Girls</a> | <a href="">
@@ -544,10 +545,10 @@
         </div>
 
         <div class="flex space-between end">
-            <p>
+            <p style="width:auto">
                 In case of any concern, <strong style="color:rgb(51, 51, 218)">Contact Us</strong>
             </p>
-            <p>
+            <p style="width:auto">
                 &copy;2023 www.myntra.com. All rights reserved.
             </p>
         </div>

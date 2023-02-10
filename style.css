@@ -7,18 +7,21 @@
 }
 :root{
   --after:0;
+  --visible:none;
+  --str:"blank"
 }
 html,
 body {
   width: 100%;
   height: 100%;
+  
 }
 
 li {
   font-weight: bold;
   list-style: none;
   font-size:90%;
-  padding: 3%;
+  padding:12px;
 
 }
 
@@ -26,8 +29,6 @@ li {
   font-size: 95%;
   font-weight: bold;
   display:block;
- 
-
 }
 .studio::after {
   content: 'NEW';
@@ -93,6 +94,7 @@ li {
   opacity:var(--after);
   
 }
+
 
 #kidsdiv::after {
   content:'';
@@ -163,27 +165,28 @@ li {
 
 nav {
   
-  height: 12vh;
+  height: min(92.16px,12vh);
   background-color: white;
-
+  box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ 
 }
 
 ul{
  
 
-  width:100%;
+  width:auto;
 }
 .left {
  
   cursor: pointer;
-  width:34vw;
-  
+  width:min(570.4px,38.4%);
+ 
 }
 
 
 
 .search-box {
-  height: 6vh;
+  height: 46.08px;
   width:35vw;
   border-radius: 3%;
   background-color: rgb(253, 244, 244);
@@ -250,17 +253,17 @@ p {
 }
 .arrange {
   margin-top:6%;
-  height: 68vh;
+  height: auto;
   width: 100%;
   background-color: rgb(252, 248, 248);
 }
 
 #bell {  
   
-  width: 15vw;
-  height: 60vh;
+  width: 202px;
+  height: 430.8px;
   background-color: rgb(252, 248, 248);
-  margin-left: 86.3%;
+  top:79px;
   
   display:none;
   cursor: pointer;
@@ -310,25 +313,20 @@ p {
 
 #profile {
   display:none;
-  margin-left:66%;
-  height: 70vh;
-  width: 46vh;
+  height: auto;
   background-color: white;
-  margin-top: 0%;
-  
-  
+  top:79px;
+  width:304px;
 }
 
-
-
-
-nav > a {
+.left > a {
   display:block;
-  height:42%;
-  width:4.5%;
+  height:36px;
+  width:65px;
+  
  
 }
-nav > a > img{
+.left > a > img{
   height:100%;
   width:100%;
  
@@ -339,10 +337,11 @@ nav > a > img{
   margin-top:0%;
   
 }
+
 .content{
   padding:3%;
-  height:100%;
-  
+  height:auto;
+
   
 }
 #profile .content{
@@ -386,7 +385,7 @@ hr{
   font-weight: bold;
 }
 .btn{
- height:3vw;
+ height:43px;
   width:48%;
   border-radius:4%;
   border:1px solid rgb(223, 220, 220);
@@ -418,11 +417,11 @@ hr{
 #studio{
   display:none;
   height: auto;
-  width:42vw;
+  width:600px;
   background-color: white;
   margin-top: 0%;
-  margin-left:27.5%;
-  
+  margin-left:min(17.5%,472.7px);
+  height:468.32px;
   
 }
 header{
@@ -431,21 +430,22 @@ header{
  
 }
 .large-box{
-  
-  width:85%;
+  padding:1.5%;
+  width:1006.4px;
   height:auto;
-  margin-left:8%;
+  margin-left:min(5%,130.64px);
   background-color: white;
-  
+ 
   
 }
 
 .large-box > .content{
-  margin:1.5%;
+
  
   padding:0%;
  
   height:100%;
+ 
 }
 #men .content a:first-child{
   color:red;font-weight:bold;
@@ -477,6 +477,9 @@ header{
 #beauty  hr + a{
   color:rgb(53, 190, 133);font-weight:bold;
 }
+.right{
+  margin-right:2%;
+}
 .right .justify-center{
   
   padding:3%;
@@ -499,97 +502,57 @@ header{
   display:none;
 }
 
-
-footer .content a:first-child{
-  font-weight: bold;
-  
-}
-
-footer .content a:first-child:hover{
-  font-weight: bold;
-}
-footer .content a:hover{
+.foo, .foo p{
   font-weight:lighter;
+  font-size: 92.5%;
+  width:1072px;
+  margin:auto;
+  margin-top: 15px;
 }
-footer .large-box{
- 
-  width:50%;
-}
-footer .image1{
-  height:10%;
-  margin:0%;
-  width:110%;
- 
-}
-footer .image1  img {
 
-height:100%;
-width:110%;
-} 
-footer .image2{
-  height:6%;
-  
-  width:53%;
-}
-footer .image2  img {
-      height:100%;  
-  
-  }
-footer .content div{
+.foo p{
+  width:100%;
   margin:0;
 }
-.stamp:first-child{
+.foo .end{
   margin-top:3%;
+}
+.foo .end p{
+  margin:0;
+}
+.foo .end div{
+  margin:0.5% 0 0.5% 0%;
+}
+.container{
+  display:grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 12px;
+}
+
+.container a{
+  display:block;
+  margin-bottom: 8px;
+}
+.container a:first-child, .container p:first-child {
+  font-weight: bold;
+}
+footer .image1{
+  height:43.5px;
+  width:324px;
  
-
-  width:21vw;
-  height:9vh;
-  
 }
 
-.stamp:nth-child(2){
-  margin-top:3%;
- 
- 
-  width:19vw;
-  height:9vh;
-  margin-left:2%;
-  
-}
-.stamp img{
-  margin-right:2%;
+footer .image2{
+  height:21px;
+  width:160px;
+
 }
 
-footer .content {
-  padding:0%;
-  margin:0%;
-}
-footer .content p, footer .content a{
- font-size:92%;
-}
-.end{
-  margin:2% 0% 0% 9%;
-  width:83vw;
-  font-size: 100%;
-  font-weight:lighter;
-  
-}
-.end p{
-  font-size: 100%;
-  font-weight:lighter;
-}
-.end div{
-  margin-top:0.5%;
-}
+footer .image1  a,footer .image1 img ,footer .image2 img,footer .image2  a{
+height:100%;
 
-#image-dress{
-  height:100%;
-}
-
-#foo,#image-dress,#mid{
-  background-color: white;
-  
-}
+} 
 
 #cover{
   display:none;
@@ -600,4 +563,51 @@ footer .content p, footer .content a{
   height:1000%;
   width:100%;
  
+}
+.stamp img{
+  height:52px;
+}
+.stamp, .stamp p{
+  font-weight: lighter;
+  font-size: 16px;
+}
+.container .item1{
+  grid-area:1/ 1 / 3 / 2;
+}
+.container .item2{
+  grid-area:3 / 1 / 4 / 2;
+ 
+}
+.container .item3{
+  grid-area:1 / 2 / 4 / 3;
+}
+.container .item4{
+  grid-area:1 / 3 / 2 / 4;
+}
+.container .item5{
+  grid-area:2 / 3/3/4;
+}
+.container .item6{
+  grid-area:1 / 4 / 2 / 5;
+ 
+  align-self: center;
+}
+.container .item7{
+  grid-area: 2/ 4/3/5;
+ 
+  
+}
+.fa-bell{
+  position:relative;
+}
+.support{
+  content:"";
+  position:absolute;
+  width:880px;
+  top:54px;
+  height:434px;
+  background-color:white;
+  display:var(--visible);
+  left:-115px;
+  color:white;
 }
