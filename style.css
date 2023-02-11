@@ -187,7 +187,7 @@ ul{
 
 .search-box {
   height: 46.08px;
-  width:35vw;
+  width:305px;
   border-radius: 3%;
   background-color: rgb(253, 244, 244);
   padding-left:2.5%;
@@ -386,7 +386,7 @@ hr{
 }
 .btn{
  height:43px;
-  width:48%;
+  width:133px;
   border-radius:4%;
   border:1px solid rgb(223, 220, 220);
   color:red;
@@ -481,8 +481,7 @@ header{
   margin-right:2%;
 }
 .right .justify-center{
-  
-  padding:3%;
+  padding:18px;
 
 }
 
