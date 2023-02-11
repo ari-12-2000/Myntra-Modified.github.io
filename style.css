@@ -20,20 +20,20 @@ body {
 li {
   font-weight: bold;
   list-style: none;
-  font-size:90%;
-  padding:12px;
+  font-size:0.87rem;
+  padding:0.75rem;
 
 }
 
 .studio {
-  font-size: 95%;
+  font-size: 0.95rem;
   font-weight: bold;
   display:block;
 }
 .studio::after {
   content: 'NEW';
   position: absolute;
-  font-size: 70%;
+  font-size: 0.7rem;
   font-weight: bold;
   top:-9%;
   right:-50%;
@@ -148,7 +148,7 @@ li {
   display:flex;
   justify-content: center;
   align-items: center;
-  font-size: 67%;
+  font-size: 0.67rem;
   color:white;
 }
 
@@ -204,10 +204,10 @@ ul{
 }
 .fa-search {
   color: grey;
-  font-size: 90%;
+  font-size: 0.9rem;
 }
 p {
-  font-size: 80%;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
@@ -291,7 +291,7 @@ p {
 }
 
 .notify-item a .text2 {
-  font-size: 56%;
+  font-size: 0.56rem;
   font-weight: bold;
   
   height: 50%;
@@ -303,7 +303,7 @@ p {
   border-radius: 10%;
   height: 20%;
   width: 50%;
-  font-size: 60%;
+  font-size:0.6rem;
   transform: skewX(-20deg);
 }
 
@@ -319,14 +319,14 @@ p {
   width:304px;
 }
 
-.left > a {
+.left > div > a {
   display:block;
   height:36px;
   width:65px;
   
  
 }
-.left > a > img{
+.left > div > a > img{
   height:100%;
   width:100%;
  
@@ -350,13 +350,13 @@ p {
 }
 .content p{
   margin-top:1%;
-  font-size:85%;
+  font-size:0.85rem;
   font-weight: lighter;
   
 }
 
 .content a{
-  font-size:90%;
+  font-size:0.9rem;
   font-weight: lighter;
   line-height: 1.8;
   display:block;
@@ -394,7 +394,7 @@ hr{
   margin-top: 5%;
   cursor:pointer;
   background-color: white;
-  font-size: 88%;
+  font-size:0.88rem;
 }
 .login:hover{
   border:1px solid red;
@@ -406,7 +406,7 @@ hr{
   width:17%;
   height:50%;
   margin-left:3%;
-  font-size:66%;
+  font-size:0.66rem;
   font-weight:bold;
   vertical-align:bottom;
   transform: skewX(-13deg);
@@ -504,7 +504,7 @@ header{
 
 .foo, .foo p{
   font-weight:lighter;
-  font-size: 92.5%;
+  font-size: 0.925rem;
   width:1072px;
   margin:auto;
   margin-top: 15px;
@@ -569,7 +569,7 @@ height:100%;
 }
 .stamp, .stamp p{
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .container .item1{
   grid-area:1/ 1 / 3 / 2;
@@ -600,14 +600,40 @@ height:100%;
 .fa-bell{
   position:relative;
 }
-.support{
-  content:"";
-  position:absolute;
-  width:880px;
-  top:54px;
-  height:434px;
-  background-color:white;
-  display:var(--visible);
-  left:-115px;
-  color:white;
+@media only screen and (max-width: 1326px)  {
+  html{
+  font-size: 88%;
+  }
+}
+.bx-menu{
+  display:none;
+}
+
+@media only screen and (max-width: 1188px){
+  .bx-menu{
+    display: inline;
+    margin:2%;
+  }
+  
+  ul{
+    flex-direction: column;
+    background-color: white;
+    box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+    height:auto;
+    position:absolute;
+    width:60%;
+    height:100vh;
+    left:-3%;
+   
+  }
+  .left{
+    position:relative;
+  }
+  li{
+    padding-left:56px;
+    
+    
+  }
+ 
 }

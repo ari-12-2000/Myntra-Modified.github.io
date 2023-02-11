@@ -34,7 +34,7 @@ input[type="text" i] {
    border:0px;
     outline: none;
     background-color: rgb(253, 244, 244);
-    font-size: 90%;
+    font-size: 0.9rem;
     cursor:text;
     margin-left: 5%;
     padding-right:2%;
@@ -46,7 +46,7 @@ input[type="text" i] {
     
   }
   .mx-left{
-    margin-left:8px;
+    margin-left:10px;
   }
 
   .icons{
