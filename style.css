@@ -260,7 +260,7 @@ p {
 
 #bell {  
   
-  width: 202px;
+  width: 206px;
   height: 430.8px;
   background-color: rgb(252, 248, 248);
   top:79px;
@@ -302,7 +302,7 @@ p {
  
   border-radius: 10%;
   height: 20%;
-  width: 50%;
+  width: 56%;
   font-size:0.6rem;
   transform: skewX(-20deg);
 }
