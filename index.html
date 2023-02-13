@@ -17,14 +17,39 @@
         sizes="64x64" />
 </head>
 
-<body >
+<body>
     <header class="fixed">
         <nav class="flex  space-between" id="nav">
 
             <div class="mx-left left flex space-between">
-                <div class="flex align-center"><i class='bx bx-menu '></i><a href="#"><img
-                            src="images/download.png" /></a></div>
-                <ul class="flex">
+                <div class="flex align-center"><i class='bx bx-menu ' id="uldiv" onmouseover="toggleNotifi(this)"
+                        onmouseout="removeNotifi(this)"></i><a href="#"><img src="images/download.png" /></a></div>
+                <ul id="ul" onmouseover="toggleNotifi(this)" onmouseout="removeNotifi(this)">
+                    <div class="flex col align-center justify-center relative" id="profile1div"
+                        onmouseover="toggleNotifi(this)" onmouseout="removeNotifi(this)">
+                        <i class="icons fa fa-user"></i>
+                        <p>Profile</p>
+                        <div class="flex col absolute" id="profile1" onmouseover="toggleNotifi(this)"
+                            onmouseout="removeNotifi(this)">
+                            <div class="content flex col">
+                                <h4>Welcome</h4>
+                                <p>To access account and manage orders</p>
+                                <button class="btn flex justify-center align-center login">
+                                    LOGIN / SIGNUP
+                                </button>
+                                <hr />
+                                <a href="#">Orders</a>
+                                <a href="#">Wishlist</a>
+                                <a href="#">Gift Cards</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Myntra Insider <span class="new-2">NEW</span></a>
+                                <hr style="margin-top: 3%" />
+                                <a href="#">Myntra Credit</a><a href="#">Coupons</a><a href="#">Saved Cards</a><a
+                                    href="#">Saved
+                                    VPA</a><a href="#">Saved Addresses</a>
+                            </div>
+                        </div>
+                    </div>
                     <li class="flex align-center" id="mendiv" onmouseover="toggleNotifi(this)"
                         onmouseout="removeNotifi(this)">
                         <a href="#">MEN</a>
@@ -45,13 +70,13 @@
                         onmouseout="removeNotifi(this)">
                         <a href="#">BEAUTY</a>
                     </li>
-                    <li class="flex col justify-center align-center relative" id="studiodiv" onmouseover="toggleNotifi(this)"
-                        onmouseout="removeNotifi(this)">
-                        
-                            <a href="#" class="studio  relative">
-                                STUDIO
-                            </a>
-                       
+                    <li class="flex col justify-center align-center relative" id="studiodiv"
+                        onmouseover="toggleNotifi(this)" onmouseout="removeNotifi(this)">
+
+                        <a href="#" class="studio  relative">
+                            STUDIO
+                        </a>
+
                         <div class=" flex col align-center absolute" id="studio" onmouseover="toggleNotifi(this)"
                             onmouseout="removeNotifi(this)">
                             <div class="content align-center flex col">
@@ -416,7 +441,7 @@
     </header>
 
     <div class="flex arrange justify-center" id="mid">
-        <div class="materials flex" id="materials" >
+        <div class="materials flex" id="materials">
             <div class="offer flex col">
                 <img src="images/1.webp" alt="" />
                 <img src="images/2.webp" alt="" />
@@ -442,9 +467,9 @@
             </div>
         </div>
     </div>
-    <div id="image-dress">
-        <img class="order" src="images/7.webp" id="dress" style="margin-top:3%" />
 
+    <img class="order" src="images/7.webp" id="dress" style="margin-top:3%" />
+    <div class="flex image-dress">
         <img class="images" src="images/img1.webp" id="dress" /><img class="images" src="images/img2.webp"
             id="dress" /><img class="images" src="images/img3.webp" id="dress" /><img class="images"
             src="images/img4.webp" id="dress" /><img class="images" src="images/img5.webp" id="dress" /><img
@@ -457,8 +482,8 @@
             class="images" src="images/img16.webp" id="dress" /><img class="images" src="images/img17.webp"
             id="dress" /><img class="images" src="images/img18.webp" id="dress" /><img class="images"
             src="images/img19.webp" id="dress" /><img class="images" src="images/img20.webp" id="dress" />
-
     </div>
+
 
     <footer class="foo">
         <div class="container">

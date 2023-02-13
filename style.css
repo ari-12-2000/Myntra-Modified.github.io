@@ -4,6 +4,9 @@
   font-family: "Calibri";
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 :root {
   --after: 0;
   --visible: none;
@@ -13,7 +16,9 @@ html,
 body {
   width: 100%;
   height: 100%;
-
+}
+#profile1div {
+  display: none;
 }
 
 li {
@@ -21,21 +26,20 @@ li {
   list-style: none;
   font-size: 0.87rem;
   padding: 0.75rem;
- 
 }
 
-.studio { /*anchor tag*/
+.studio {
+  /*anchor tag*/
   font-size: 0.95rem;
   font-weight: bold;
- 
 }
 .studio::after {
   content: "NEW";
   position: absolute;
   font-size: 0.7rem;
   font-weight: bold;
-  top: -5px;
-  right: -50%;
+  top: -4px;
+  right: -46%;
   color: red;
 }
 
@@ -49,8 +53,6 @@ li {
 #belldiv {
   position: relative;
 }
-
-
 
 #mendiv::after {
   content: "";
@@ -160,19 +162,22 @@ li {
 }
 
 nav {
-  height: min(12vh,93px);
+  height: min(12vh, 93px);
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  width:100%;
+  width: 100%;
 }
 
 ul {
   width: auto;
+  display: flex;
 }
 .left {
   cursor: pointer;
   width: min(570.4px, 38.4%);
- 
+}
+#uldiv {
+  margin-right: 20px;
 }
 
 .search-box {
@@ -183,7 +188,6 @@ ul {
   padding-left: 2.5%;
   flex-grow: 1;
   flex-basis: 0;
-  
 }
 
 .search-box:focus-within {
@@ -222,18 +226,16 @@ p {
 }
 
 .order {
-  width: 98%;
+  width: 100vw;
   margin-top: -2.5%;
 }
 
 .human {
   width: 50%;
 }
-.dress {
-  width: 100vw;
-}
+
 .images {
-  width: 9.8vw;
+  width: 10vw;
 }
 .arrange {
   margin-top: 94px;
@@ -248,7 +250,7 @@ p {
   width: 206px;
   height: 430.8px;
   background-color: rgb(252, 248, 248);
-  top:100%;
+  top: 100%;
 
   display: none;
   cursor: pointer;
@@ -294,7 +296,8 @@ p {
   text-align: center;
 }
 
-#profile {
+#profile,
+#profile1 {
   display: none;
   height: auto;
   background-color: white;
@@ -388,8 +391,8 @@ hr {
   border-radius: 10%;
 }
 #studio {
-  top:100% ;
-  
+  top: 100%;
+
   display: none;
   height: auto;
   width: 600px;
@@ -583,66 +586,88 @@ footer .image2 a {
 }
 
 @media only screen and (max-width: 1188px) {
+  .left>div>a{
+    height: 32px;
+    width:62px;
+  }
   .bx-menu {
     display: inline;
-    margin: 2%;
   }
 
+  .end {
+    display: flex;
+    flex-wrap: wrap;
+  }
   ul {
     flex-direction: column;
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: absolute;
-    width: 220px;
+    width: 231.8px;
     height: 100vh;
     left: -44px;
-    padding-top: 85px;
-    
+  }
+  #ul {
+    display: none;
   }
   .left {
     position: relative;
-    
   }
   li {
-    padding-left: 83px;
-    
+    justify-content: center;
+    align-content: center;
   }
+
   #profilediv {
-    position: absolute;
-    left: 28px;
-    width: 134px;
-    top: 7px;
-    z-index: 1;
+    display: none;
   }
-  #profilediv::after {
+
+  #profile1div {
+    z-index: 1;
+    display: flex;
+    left: 0px;
+
+    height: 81.92px;
+  }
+  #profile1div::after {
     content: "";
     position: absolute;
-    width: 234px;
-    height: 111%;
+    width: 100%;
+    height: 100%;
     background-color: red;
     opacity: 0.1;
-    left: -44px;
-    z-index: 0;
   }
   .right {
     margin-left: 0px;
-    width:100vw;
+    width: 100vw;
   }
   #nav {
     justify-content: flex-start;
     height: 93px;
   }
-  #studiodiv{
-    align-items: normal;
-  }
-  .studio::after{
-    top:-3px;
-    right:49%;
-  }
-  .search-box{
-    width:10px;
+
+  .search-box {
+    width: 10px;
   }
 
-  
-  
+  #profile1 {
+    left: 100%;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+ 
+}
+
+@media only screen and (max-width: 768px) {
+  .materials {
+    height: 30vh;
+  }
+}
+.image-dress {
+  flex-wrap: wrap;
+  width: 100vw;
 }
