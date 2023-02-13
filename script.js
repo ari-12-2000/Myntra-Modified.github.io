@@ -8,9 +8,6 @@ function toggleNotifi(obj) {
   } else {
     r = document.getElementById(obj.id + "div");
   }
-  // if(s=="bell"){
-  //   support.style.setProperty("--visible", "flex");
-  // }
  
     document.getElementById(s).style.display = "flex";
  
@@ -27,10 +24,17 @@ function removeNotifi(obj) {
   } else {
     r = document.getElementById(obj.id + "div");
   }
-  // if(s=="bell"){
-  //   support.style.setProperty("--visible", "none");
-  // }
+
   r.style.setProperty("--after", "0");
   document.getElementById("cover").style.display = "none";
   document.getElementById(s).style.display = "none";
+}
+
+window.onload=function() {
+  console.log(window.innerWidth);
+  if(window.innerWidth<='768' && window.innerHeight<='1024'){
+    document.getElementById('materials').style.height="30vh";
+    
+  }
+
 }
