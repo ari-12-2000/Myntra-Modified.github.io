@@ -20,7 +20,9 @@ body {
 #profile1div {
   display: none;
 }
-
+#searchdiv{
+  display: none;
+}
 li {
   font-weight: bold;
   list-style: none;
@@ -162,7 +164,7 @@ li {
 }
 
 nav {
-  height: min(12vh, 93px);
+  height: 93px;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 100%;
@@ -221,9 +223,11 @@ p {
   height: 33.3%;
 }
 
-.materials {
-  height: 60vh;
+.materials { 
+width:100vw;
+
 }
+
 
 .order {
   width: 100vw;
@@ -234,8 +238,8 @@ p {
   width: 50%;
 }
 
-.images {
-  width: 10vw;
+.images{
+  width:10vw;
 }
 .arrange {
   margin-top: 94px;
@@ -584,8 +588,18 @@ footer .image2 a {
 .bx-menu {
   display: none;
 }
+#searchdiv,#search{
+  display: none;
+}
+
+
 
 @media only screen and (max-width: 1188px) {
+ 
+  #dress{
+    width:15vw;
+  }
+
   .left>div>a{
     height: 32px;
     width:62px;
@@ -637,18 +651,8 @@ footer .image2 a {
     background-color: red;
     opacity: 0.1;
   }
-  .right {
-    margin-left: 0px;
-    width: 100vw;
-  }
-  #nav {
-    justify-content: flex-start;
-    height: 93px;
-  }
 
-  .search-box {
-    width: 10px;
-  }
+ 
 
   #profile1 {
     left: 100%;
@@ -663,11 +667,26 @@ footer .image2 a {
 }
 
 @media only screen and (max-width: 768px) {
-  .materials {
-    height: 25vh;
+
+
+  #search{
+    display:none;
+    
+  }
+ #search-box{
+  display:none;
+ }
+  #searchdiv{
+    display:inline;
+    margin-right: 15px;
+  }
+
+  #materials{
+    height:33vh;
   }
 }
 .image-dress {
   flex-wrap: wrap;
   width: 100vw;
+  justify-content: center;
 }
