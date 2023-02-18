@@ -47,3 +47,13 @@ function removeNotifi(obj) {
   r.style.setProperty("--after", "0");
   document.getElementById("cover").style.display = "none";
 }
+
+function dropdown(obj){
+     var emnt=document.querySelectorAll("content");
+     for (var i = 0; i < emnt.length; i++) {
+         var anchor=window.getComputedStyle(emnt[i]);
+         if(anchor.getPropertyValue('color')=="red")
+           document.getElementById('#dropdown').appendChild(emnt[i]);
+     }
+}
+

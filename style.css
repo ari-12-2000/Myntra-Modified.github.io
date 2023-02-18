@@ -23,6 +23,9 @@ body {
 #searchdiv{
   display: none;
 }
+.bx-caret-right{
+  display: none;
+}
 li {
   font-weight: bold;
   list-style: none;
@@ -55,6 +58,7 @@ li {
 #belldiv {
   position: relative;
 }
+
 
 #mendiv::after {
   content: "";
@@ -460,9 +464,7 @@ header {
   color: rgb(53, 190, 133);
   font-weight: bold;
 }
-.right {
-  margin-right: 2%;
-}
+
 .right .justify-center {
   padding: 18px;
 }
@@ -596,6 +598,9 @@ footer .image2 a {
 
 @media only screen and (max-width: 1188px) {
  
+  #caret{
+    display: inline;
+  }
   #dress{
     width:15vw;
   }
@@ -677,8 +682,8 @@ footer .image2 a {
   display:none;
  }
   #searchdiv{
-    display:inline;
-    margin-right: 15px;
+    display:flex;
+
   }
 
   #materials{

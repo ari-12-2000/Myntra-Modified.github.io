@@ -20,10 +20,10 @@
 <body>
     <header class="fixed">
         <nav class="flex  space-between" id="nav">
-            <div  class="search-box flex align-self-center align-center " id="search" onmouseover="toggleNotifi(this)"
-                onmouseout="removeNotifi(this)" >
+            <div class="search-box flex align-self-center align-center " id="search" onmouseover="toggleNotifi(this)"
+                onmouseout="removeNotifi(this)">
                 <i class="fa fa-search "></i>
-                <input type="text" placeholder="Search for products, brands and more" id="input1" >
+                <input type="text" placeholder="Search for products, brands and more" id="input1">
             </div>
             <div class="mx-left left flex space-between" id="left">
                 <div class="flex align-center"><i class='bx bx-menu ' id="uldiv" onmouseover="toggleNotifi(this)"
@@ -56,30 +56,29 @@
                     </div>
                     <li class="flex align-center" id="mendiv" onmouseover="toggleNotifi(this)"
                         onmouseout="removeNotifi(this)">
-                        <a href="#">MEN</a>
+                        <a href="#">MEN</a><i class='bx bx-caret-right' id="caret"></i>
                     </li>
                     <li class="flex align-center" id="womendiv" onmouseover="toggleNotifi(this)"
                         onmouseout="removeNotifi(this)">
-                        <a href="#">WOMEN</a>
+                        <a href="#">WOMEN</a><i class='bx bx-caret-right' id="caret"></i>
                     </li>
                     <li class="flex align-center" id="kidsdiv" onmouseover="toggleNotifi(this)"
                         onmouseout="removeNotifi(this)">
-                        <a href="#">KIDS</a>
+                        <a href="#">KIDS</a><i class='bx bx-caret-right' id="caret"></i>
                     </li>
                     <li class="flex align-center" id="homediv" onmouseover="toggleNotifi(this)"
                         onmouseout="removeNotifi(this)">
-                        <a href="#">HOME & LIVING</a>
+                        <a href="#">HOME & LIVING</a><i class='bx bx-caret-right' id="caret"></i>
                     </li>
                     <li class="flex align-center" id="beautydiv" onmouseover="toggleNotifi(this)"
                         onmouseout="removeNotifi(this)">
-                        <a href="#">BEAUTY</a>
+                        <a href="#">BEAUTY</a><i class='bx bx-caret-right' id="caret"></i>
                     </li>
                     <li class="flex col justify-center align-center relative" id="studiodiv"
                         onmouseover="toggleNotifi(this)" onmouseout="removeNotifi(this)">
 
                         <a href="#" class="studio  relative">
-                            STUDIO
-                        </a>
+                            STUDIO<i class='bx bx-caret-right' id="caret"></i></a>
 
                         <div class=" flex col align-center absolute" id="studio" onmouseover="toggleNotifi(this)"
                             onmouseout="removeNotifi(this)">
@@ -98,13 +97,16 @@
                     </li>
                 </ul>
             </div>
-            
-            
+
+
             <div class="right flex " id="right">
-                <i class="fa fa-search align-self-center" id="searchdiv" onclick="toggleNotifi(this)"></i>
+                <div class="flex col align-center justify-center" id="searchdiv" onclick="toggleNotifi(this)">
+                    <i class="fa fa-search"></i>
+                    <p>Search</p>
+                </div>
                 <div class="search-box flex align-self-center align-center " id="search-box">
                     <i class="fa fa-search "></i>
-                    <input type="text" placeholder="Search for products, brands and more" >
+                    <input type="text" placeholder="Search for products, brands and more">
                 </div>
 
                 <div class="flex col align-center justify-center" id="profilediv" onmouseover="toggleNotifi(this)"
@@ -131,18 +133,6 @@
                                 VPA</a><a href="#">Saved Addresses</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="flex col align-center justify-center">
-                    <i class="icons fa fa-heart"></i>
-                    <p>Wishlist</p>
-
-                </div>
-
-
-                <div class="flex col align-center justify-center">
-                    <i class="icons fa fa-bag-shopping"></i>
-                    <p>Bag</p>
                 </div>
 
                 <div class="flex col align-center justify-center relative " current_count="3" id="belldiv"
@@ -185,6 +175,20 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="flex col align-center justify-center">
+                    <i class="icons fa fa-heart"></i>
+                    <p>Wishlist</p>
+
+                </div>
+
+
+                <div class="flex col align-center justify-center">
+                    <i class="icons fa fa-bag-shopping"></i>
+                    <p>Bag</p>
+                </div>
+
+
 
             </div>
 
@@ -448,7 +452,7 @@
     </header>
 
     <div class="flex arrange justify-center" id="mid">
-        <div class="materials flex" id="materials">
+        <div class="materials flex justify-center" id="materials">
             <div class="offer flex col">
                 <img src="images/1.webp" alt="" />
                 <img src="images/2.webp" alt="" />
